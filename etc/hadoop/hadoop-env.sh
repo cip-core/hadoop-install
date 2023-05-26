@@ -24,7 +24,7 @@
 # remote nodes.
 
 #################HADOOP###########################
-export HADOOP_HOME=/opt/hadoop
+#export HADOOP_HOME=/opt/hadoop
 export HADOOP_CONF_DIR=$HADOOP_HOME/etc/hadoop
 ##################HADOOP##########################
 
@@ -44,7 +44,8 @@ for f in $HADOOP_HOME/contrib/capacity-scheduler/*.jar; do
     export HADOOP_CLASSPATH=$f
   fi
 done
-export HADOOP_CLASSPATH=$HADOOP_CLASSPATH:path/to/your/custom/libs
+#export HADOOP_CLASSPATH=${HADOOP_CLASSPATH}:path/to/your/custom/libs
+export HADOOP_CLASSPATH=${HADOOP_CLASSPATH}
 #The maximum amount of heap to use, in MB. Default is 1000.
 #export HADOOP_HEAPSIZE=
 #export HADOOP_NAMENODE_INIT_HEAPSIZE=""
@@ -67,7 +68,7 @@ export HADOOP_SECURE_DN_USER=${HADOOP_SECURE_DN_USER}
 
 # Where log files are stored.  $HADOOP_HOME/logs by default.
 ############################################################
-export HADOOP_LOG_DIR=/var/log/hadoop/hdfs
+export HADOOP_LOG_DIR=$HADOOP_HOME/logs/hdfs
 
 # Where log files are stored in the secure data environment.
 export HADOOP_SECURE_DN_LOG_DIR=${HADOOP_LOG_DIR}/${HADOOP_HDFS_USER}
@@ -77,7 +78,7 @@ export HADOOP_SECURE_DN_LOG_DIR=${HADOOP_LOG_DIR}/${HADOOP_HDFS_USER}
 #       the user that will run the hadoop daemons.  Otherwise there is the
 #       potential for a symlink attack.
 #############################################################
-export HADOOP_PID_DIR=/var/pid/hadoop/hdfs
+export HADOOP_PID_DIR=$HADOOP_HOME/pid/hdfs
 export HADOOP_SECURE_DN_PID_DIR=${HADOOP_PID_DIR}
 
 # A string representing this instance of hadoop. $USER by default.
