@@ -21,5 +21,5 @@ sudo mkdir -p $DATA_DIR
 sudo chmod -R 755 $DATA_DIR
 
 echo "Create log dir"
-sudo mkdir -p $LOG_DIR
-sudo chmod -R 755 $LOG_DIR
+sudo mkdir -p $HDFS_LOG_DIR
+sudo chmod -R 755 $HDFS_LOG_DIR

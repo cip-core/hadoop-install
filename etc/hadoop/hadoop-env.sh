@@ -64,14 +64,14 @@ export HADOOP_CLIENT_OPTS="-Xmx512m $HADOOP_CLIENT_OPTS"
 #HADOOP_JAVA_PLATFORM_OPTS="-XX:-UsePerfData $HADOOP_JAVA_PLATFORM_OPTS"
 
 # On secure datanodes, user to run the datanode as after dropping privileges
-export HADOOP_SECURE_DN_USER=${HADOOP_SECURE_DN_USER}
+#export HADOOP_SECURE_DN_USER=${HADOOP_SECURE_DN_USER}
 
 # Where log files are stored.  $HADOOP_HOME/logs by default.
 ############################################################
 export HADOOP_LOG_DIR=$HADOOP_HOME/logs/hdfs
 
 # Where log files are stored in the secure data environment.
-export HADOOP_SECURE_DN_LOG_DIR=${HADOOP_LOG_DIR}/${HADOOP_HDFS_USER}
+#export HADOOP_SECURE_DN_LOG_DIR=${HADOOP_LOG_DIR}/${HADOOP_HDFS_USER}
 
 # The directory where pid files are stored. /tmp by default.
 # NOTE: this should be set to a directory that can only be written to by 
@@ -79,7 +79,7 @@ export HADOOP_SECURE_DN_LOG_DIR=${HADOOP_LOG_DIR}/${HADOOP_HDFS_USER}
 #       potential for a symlink attack.
 #############################################################
 export HADOOP_PID_DIR=$HADOOP_HOME/pid/hdfs
-export HADOOP_SECURE_DN_PID_DIR=${HADOOP_PID_DIR}
+#export HADOOP_SECURE_DN_PID_DIR=${HADOOP_PID_DIR}
 
 # A string representing this instance of hadoop. $USER by default.
 export HADOOP_IDENT_STRING=$USER

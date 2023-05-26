@@ -27,4 +27,8 @@
     <name>yarn.nodemanager.aux-services.mapreduce.shuffle.class</name>
     <value>org.apache.hadoop.mapred.ShuffleHandler</value>
   </property>
+  <!-- <property>
+    <name>yarn.web-proxy.address</name>
+    <value>localhost:8100</value>
+   </property> -->
 </configuration>
