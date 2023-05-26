@@ -21,8 +21,8 @@ export HADOOP_MAPRED_ROOT_LOGGER=INFO,RFA
 
 #export HADOOP_JOB_HISTORYSERVER_OPTS=
 #$HADOOP_MAPRED_HOME/logs by default.
-export HADOOP_MAPRED_LOG_DIR=/var/log/hadoop/mapred # Where log files are stored.
+export HADOOP_MAPRED_LOG_DIR=$HADOOP_HOME/mapred # Where log files are stored.
 #export HADOOP_JHS_LOGGER=INFO,RFA # Hadoop JobSummary logger.
-export HADOOP_MAPRED_PID_DIR=/var/pid/hadoop/mapred # The pid files are stored. /tmp by default.
+export HADOOP_MAPRED_PID_DIR=$HADOOP_HOME/mapred # The pid files are stored. /tmp by default.
 #export HADOOP_MAPRED_IDENT_STRING= #A string representing this instance of hadoop. $USER by default
 #export HADOOP_MAPRED_NICENESS= #The scheduling priority for daemons. Defaults to 0.
